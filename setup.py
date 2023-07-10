@@ -22,7 +22,7 @@ setup(
     description='Statistics and scientific plotting',
     download_url='https://github.com/apereiroc/plottergeist.git',
     license='MIT',
-    packages='plottergeist',
+    packages=['plottergeist'],
     python_requires=">=3.7",
     include_package_data=True,
     install_requires=requirements,
