@@ -33,7 +33,7 @@ def compare_hist(data, fit, data_weights=None,
   _fit = make_hist(fit, weights=fit_weights, density=density, bins=_data.edges, *args,
                  **kwargs)
 
-  assert _fit.norm != 0.0
+  assert _fit.norm != 0.0, f"The integral of the histogram of the PDF is 0. Check the values: {_fit.counts}"
 
   _data_norm = 1.0
   # _fit_norm = 1.0
