@@ -206,9 +206,9 @@ mpl.rcParams['lines.linestyle'] = "-"
 ##
 ## The font.size property is the default font size for text, given in pts.
 ## 10 pt is the standard value.
-mpl.rcParams['font.size']   = "12"
+mpl.rcParams['font.size'] = "12"
 mpl.rcParams['font.family'] = "serif"
-mpl.rcParams['font.serif']  = "Palatino"
+mpl.rcParams['font.serif'] = "Stickstoo"
 #font.family         : sans-serif
 #font.style          : normal
 #font.variant        : normal
@@ -234,7 +234,7 @@ mpl.rcParams['font.serif']  = "Palatino"
 
 #### LaTeX customizations. See http://wiki.scipy.org/Cookbook/Matplotlib/UsingTex
 mpl.rcParams['text.usetex'] = True
-mpl.rcParams['text.latex.preamble'] = "\\usepackage{mathpazo}"
+mpl.rcParams['text.latex.preamble'] = "\\usepackage{stickstootext}\\usepackage[stickstoo,vvarbb]{newtxmath}"
 # mpl.rcParams['text.latex.preamble'] = "\\usepackage{fourier}\\usepackage{chemgreek}\\selectchemgreekmapping{fourier}"
 # mpl.rcParams['text.latex.preamble'] = "\\usepackage{libertine}\\usepackage{inconsolata}\\usepackage[libertine]{newtxmath}"
 
@@ -366,8 +366,8 @@ mpl.rcParams['axes.prop_cycle'] = cycler('color', [
 #axes.ymargin        : .05  ## y margin See `axes.Axes.margins`
 #polaraxes.grid      : True    ## display grid on polar axes
 #axes3d.grid         : True    ## display grid on 3d axes
-mpl.rcParams['axes.xmargin'] = 0.0#0.01
-mpl.rcParams['axes.ymargin'] = 0.0#0.02
+mpl.rcParams['axes.xmargin'] = 0.01
+mpl.rcParams['axes.ymargin'] = 0.03
 mpl.rcParams['axes.spines.top'] = True
 
 #### DATES
@@ -543,7 +543,7 @@ mpl.rcParams['figure.autolayout'] = True
 #contour.corner_mask        : True   ## True | False | legacy
 
 #### ERRORBAR PLOTS
-mpl.rcParams['errorbar.capsize'] 		= 2
+mpl.rcParams['errorbar.capsize'] = 2
 #errorbar.capsize : 0             ## length of end cap on error bars in pixels
 
 #### HISTOGRAM PLOTS
@@ -555,7 +555,7 @@ mpl.rcParams['hist.bins'] = 60
 #### SCATTER PLOTS
 #scatter.marker : o               ## The default marker type for scatter plots.
 #scatter.edgecolors : face        ## The default edgecolors for scatter plots.
-mpl.rcParams['scatter.marker'] 		= "."
+mpl.rcParams['scatter.marker'] = "."
 #mpl.rcParams['scatter.edgecolors']     = "face"
 
 
@@ -592,12 +592,12 @@ mpl.rcParams['scatter.marker'] 		= "."
 ## the default savefig params can be different from the display params
 ## e.g., you may want a higher resolution, or to make the figure
 ## background white
-mpl.rcParams['savefig.facecolor'] 		= "white"
-mpl.rcParams['savefig.edgecolor']     = "white"
-mpl.rcParams['savefig.format']  		  = "pdf"
-mpl.rcParams['savefig.directory'] 		= ""
-mpl.rcParams['savefig.pad_inches']    = 0.1
-mpl.rcParams['savefig.bbox']  		    = 'tight'
+mpl.rcParams['savefig.facecolor'] = "white"
+mpl.rcParams['savefig.edgecolor'] = "white"
+mpl.rcParams['savefig.format'] = "pdf"
+mpl.rcParams['savefig.directory'] = ""
+mpl.rcParams['savefig.pad_inches'] = 0.1
+mpl.rcParams['savefig.bbox'] = 'tight'
 
 #savefig.dpi         : figure   ## figure dots per inch or 'figure'
 #savefig.facecolor   : white    ## figure facecolor when saving
