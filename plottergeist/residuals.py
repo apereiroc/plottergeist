@@ -32,6 +32,9 @@ def compare_hist(data, fit, data_weights=None,
                     *args, **kwargs)
   _fit = make_hist(fit, weights=fit_weights, density=density, bins=_data.edges, *args,
                  **kwargs)
+
+  assert _fit.norm != 0.0
+
   _data_norm = 1.0
   # _fit_norm = 1.0
   _fit_norm = _data.norm/_fit.norm
