@@ -352,7 +352,7 @@ mpl.rcParams['text.latex.preamble'] = "\\usepackage{stickstootext}\\usepackage[s
 
 # Custom color set
 mpl.rcParams['axes.prop_cycle'] = cycler('color', [
-    '#008EFF', '#ff2d55', '#3BEF56', '#626CF0', '#ff9500', '#5ac8fa','#FF6388',  '#BDFE86', '#BF85F5', '#FFC34D'
+    '#008EFF', '#ff2d55', '#79C66E', '#626CF0', '#F9E855', '#ff9500', '#5ac8fa','#FF6388',  '#BDFE86', '#BF85F5', '#FFC34D'
     ])
 ## color cycle for plot lines  as list of string
 ## colorspecs: single letter, long name, or web-style hex
