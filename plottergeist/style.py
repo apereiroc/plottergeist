@@ -484,7 +484,7 @@ mpl.rcParams['legend.frameon'] = False
 ## See http://matplotlib.org/api/figure_api.html#matplotlib.figure.Figure
 mpl.rcParams['figure.titlesize'] = 'medium'
 mpl.rcParams['figure.titleweight'] = "normal"
-mpl.rcParams['figure.figsize'] = 6, 4
+# mpl.rcParams['figure.figsize'] = 6, 4
 mpl.rcParams['figure.autolayout'] = True
 #figure.titlesize : large      ## size of the figure title (Figure.suptitle())
 #figure.titleweight : normal   ## weight of the figure title
