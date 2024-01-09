@@ -45,12 +45,14 @@ def make_plot_1D_with_pull(figsize):
   axpull.xaxis.set_major_locator(plt.MaxNLocator(8))
   axpull.set_ylim(-7, 7)
   axpull.set_yticks([-5, -3, 0, +3, +5])
-  axpull.set_yticklabels([-5, -3, 0, 3, 5], fontdict={"fontsize": 8})
+  # axpull.set_yticklabels([-5, -3, 0, 3, 5], fontdict={"fontsize": 8})
+  axpull.set_yticklabels([-5, -3, 0, 3, 5])
   axpull.tick_params(which='major', length=4, width=1, direction='in',
                     bottom=True, top=True, left=True, right=True)
   axpull.tick_params(which='minor', length=4, width=1, direction='in',
                     bottom=True, top=True, left=True, right=True)
-  axpull.set_ylabel("Pull", fontsize=14)
+  # axpull.set_ylabel("Pull", fontsize=14)
+  axpull.set_ylabel("Pull")
 
   fig.align_ylabels()
 
@@ -115,12 +117,14 @@ def make_plot_3D_with_pull(figsize):
     axpull.xaxis.set_major_locator(plt.MaxNLocator(8))
     axpull.set_ylim(-7, 7)
     axpull.set_yticks([-5, -3, 0, +3, +5])
-    axpull.set_yticklabels([-5, -3, 0, 3, 5], fontdict={"fontsize": 8})
+    # axpull.set_yticklabels([-5, -3, 0, 3, 5], fontdict={"fontsize": 8})
+    axpull.set_yticklabels([-5, -3, 0, 3, 5])
     axpull.tick_params(which='major', length=4, width=1, direction='in',
                       bottom=True, top=True, left=True, right=True)
     axpull.tick_params(which='minor', length=4, width=1, direction='in',
                       bottom=True, top=True, left=True, right=True)
-    axpull.set_ylabel("Pull", fontsize=14)
+    # axpull.set_ylabel("Pull", fontsize=14)
+    axpull.set_ylabel("Pull")
 
   fig.align_ylabels()
 
@@ -222,12 +226,14 @@ def make_plot_5D_with_pull(figsize):
     axpull.xaxis.set_major_locator(plt.MaxNLocator(8))
     axpull.set_ylim(-7, 7)
     axpull.set_yticks([-5, -3, 0, +3, +5])
-    axpull.set_yticklabels([-5, -3, 0, 3, 5], fontdict={"fontsize": 8})
+    # axpull.set_yticklabels([-5, -3, 0, 3, 5], fontdict={"fontsize": 8})
+    axpull.set_yticklabels([-5, -3, 0, 3, 5])
     axpull.tick_params(which='major', length=4, width=1, direction='in',
                       bottom=True, top=True, left=True, right=True)
     axpull.tick_params(which='minor', length=4, width=1, direction='in',
                       bottom=True, top=True, left=True, right=True)
-    axpull.set_ylabel("Pull", fontsize=14)
+    # axpull.set_ylabel("Pull", fontsize=14)
+    axpull.set_ylabel("Pull")
 
   fig.align_ylabels()
 
@@ -320,12 +326,14 @@ def make_plot_6D_with_pull(figsize):
     axpull.xaxis.set_major_locator(plt.MaxNLocator(8))
     axpull.set_ylim(-7, 7)
     axpull.set_yticks([-5, -3, 0, +3, +5])
-    axpull.set_yticklabels([-5, -3, 0, 3, 5], fontdict={"fontsize": 8})
+    # axpull.set_yticklabels([-5, -3, 0, 3, 5], fontdict={"fontsize": 8})
+    axpull.set_yticklabels([-5, -3, 0, 3, 5])
     axpull.tick_params(which='major', length=4, width=1, direction='in',
                       bottom=True, top=True, left=True, right=True)
     axpull.tick_params(which='minor', length=4, width=1, direction='in',
                       bottom=True, top=True, left=True, right=True)
-    axpull.set_ylabel("Pull", fontsize=14)
+    # axpull.set_ylabel("Pull", fontsize=14)
+    axpull.set_ylabel("Pull")
 
   fig.align_ylabels()
 
