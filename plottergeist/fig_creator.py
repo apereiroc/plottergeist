@@ -5,7 +5,7 @@ import matplotlib.gridspec as gridspec
 def make_plot(ndim: int, pull: bool = False, figsize=None):
     if ndim not in [1, 2, 3, 5, 6]:
         raise ValueError(
-            "ERROR: currently supported values for ndim are 1, 3, 5 and 6.\
+            "ERROR: currently supported values for ndim are 1, 2, 3, 5 and 6.\
                           Please consider creating your own figure from plottergeist functions."
         )
     if ndim == 1:
