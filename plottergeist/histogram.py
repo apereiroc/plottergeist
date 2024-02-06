@@ -57,9 +57,10 @@ class Histogram:
             width are chosen; it is not a probability *mass* function.
         """
         # create histogram and get counts and bin edges
-        c, e = np.histogram(data, bins=bins, weights=weights, density=density, **kwargs)
+        # do not normalise yet, as errors must first be assessed
+        c, e = np.histogram(data, bins=bins, weights=weights, density=False, **kwargs)
 
-        # compute bin centers, binwidth and integral
+        # compute bin centers and integral
         b = 0.5 * (e[1:] + e[:-1])
         norm = np.sum(c * np.diff(e))
 
@@ -83,10 +84,11 @@ class Histogram:
         else:
             y_errl, y_errh = _get_errors_poisson(c)
 
-        # if density:
-        #     c /= norm
-        #     y_errl /= norm
-        #     y_errh /= norm
+        if density:
+            c = c / norm
+            y_errl = y_errl / norm
+            y_errh = y_errh / norm
+            norm = np.sum(c * np.diff(e))
 
         # populate class attributes
         self.data = data
